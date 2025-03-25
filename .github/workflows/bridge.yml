@@ -26,9 +26,7 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
-        uses: webfactory/ssh-agent@v0.9.0
         with:
-          ssh-private-key: ${{ secrets.HBBCOMMON_PRIVATE_KEY }}
           submodules: recursive
 
       - name: Install prerequisites
